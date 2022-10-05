@@ -4,8 +4,16 @@
 <div class="main-content">
     <div class="wrapper">
         <h1>Manage Order</h1>
-
-        <br> <br> <br>
+        <br>
+        <!-- Session message -->
+        <?php
+            if(isset($_SESSION['update'])) 
+            {
+                echo $_SESSION['update']; //Displaying Session Message
+                unset ($_SESSION['update']);//Removing Session Message
+            }
+        ?>
+        <br> <br>
         <!-- Add Admin Button -->
         <a href="#" class="btn-primary">Add Order</a>
         <br> <br> <br>
@@ -69,8 +77,7 @@
                         <td><?php echo $customer_adress ?></td>
 
                         <td>
-                            <!-- <a href="#" class="btn-secondary">Update Admin</a> -->
-                            <!-- <a href="#" class="btn-danger">Delete Admin</a> -->
+                        <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>"class="btn-secondary">Update Order</a>
                         </td>
                     </tr>
 
