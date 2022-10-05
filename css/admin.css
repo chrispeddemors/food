@@ -1,0 +1,148 @@
+/* 
+    Author: Chris Peddemors;
+    Theme: Food Order Website Admin;
+    Version : 1.0;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #2c3e50;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+.btn-primary {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #34495e;
+}
+
+.btn-secondary {
+    background-color: #16a085;
+    color: #ecf0f1;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #1abc9c;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    color: #f1f2f6;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #d35400;
+}
+
+.success{
+    color:#27ae60;
+    font-weight: bold;
+}
+
+.error{
+    color : #c0392b;
+    font-weight: bold;
+}
+
+/* CSS for Menu */
+.menu {
+    border-bottom: 1px solid grey;
+    background-color: #34495e;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.menu ul li a:hover {
+    color: #95a5a6;
+}
+
+/* CSS for Main Content */
+.main-content {
+    background-color: #ecf0f1;
+    padding: 3% 0;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+.col-4:hover {
+    color: rgb(110, 116, 116);
+}
+
+/* CSS for Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* CSS for Login */
+.login{
+    border: 1px solid grey;
+    width: 20%;
+    margin: 10% auto; 
+    padding: 2%;
+}
