@@ -32,7 +32,7 @@
                 $customer_adress = $row['customer_adress'];
             }
             else
-            {
+            {//Execution failed
                 $_SESSION['update'] = "<div class='error'>Failed to update order</div>";
                 header("location:".SITEURL."admin/manage-order.php");
             }
