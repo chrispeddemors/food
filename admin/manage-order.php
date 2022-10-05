@@ -69,7 +69,27 @@
                         <!-- total 	order_date 	status 	customer_name 	 -->
                         <td><?php echo $total ?></td>
                         <td><?php echo $order_date ?></td>
-                        <td><?php echo $status ?></td>
+                        <td>
+                            <?php //Ordered, On Delivery, Delivered, Cancelled 
+                                if($status == "Ordered")  
+                                {
+                                    echo "<label style='font-weight: bold'>$status</label>";
+                                }
+                                elseif($status == "On Delivery")
+                                {
+                                    echo "<label style='color: orange; font-weight: bold'>$status</label>";
+                                }
+                                elseif($status == "Delivered")
+                                {
+                                    echo "<label style='color: green; font-weight: bold'>$status</label>";
+                                }
+                                elseif($status == "Cancelled")
+                                {
+                                    echo "<label style='color: red;font-weight: bold'>$status</label>";
+                                }
+                                
+                                
+                                ?></td>
                         <td><?php echo $customer_name ?></td>
                         <!-- customer_contact 	customer_email 	customer_adress  -->
                         <td><?php echo $customer_contact ?></td>
